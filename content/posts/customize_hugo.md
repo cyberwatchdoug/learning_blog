@@ -14,5 +14,5 @@ showToC: true
 openToC: false
 showComments: false
 showHeadingAnchors: true
-tags: ['']
+tags: ['hugo']
 ---
