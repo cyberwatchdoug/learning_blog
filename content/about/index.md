@@ -1,7 +1,7 @@
 ---
 title: 'About'
 date: 2024-09-03T21:23:47-07:00
-draft: true
+draft: false
 hidden: false
 externalURL: false
 showDate: true
