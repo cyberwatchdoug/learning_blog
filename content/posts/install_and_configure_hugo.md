@@ -1,7 +1,7 @@
 ---
 title: 'Install and Configure Hugo'
 date: 2024-08-30T11:07:37-07:00
-draft: true
+draft: false
 hidden: false
 externalURL: false
 showDate: true
