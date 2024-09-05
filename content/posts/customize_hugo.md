@@ -17,6 +17,19 @@ showHeadingAnchors: true
 tags: ['hugo']
 ---
 
+## About page
+This one is easy, compared to many other configurations. To create an About page, just issue the following command in your sites root directory:
+
+```Bash
+hugo new about/index.md
+```
+
+This will create (if not already exists) the `./content/about/` folder, and also the `index.md` page.
+
+To use this page, you'll need to adjust your menu configuration. This will hopefully come included in some way with the theme you have chosen for your site.
+
+In my example, I'm using the [Kayal](https://github.com/mnjm/kayal) theme.
+
 ## Archetypes
 These are your templates for new content, found under the *Content Management* section on the [gohugo.io](https://gohugo.io/content-management-archetypes) website.
 
