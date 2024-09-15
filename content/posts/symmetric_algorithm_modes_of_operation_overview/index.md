@@ -16,8 +16,33 @@ showComments: false
 showHeadingAnchors: true
 tags: ['Encryption']
 ---
-Symmetric encryption algorithms such as AES or DES will typically encrypt data in fixed-size blocks.
-If that fixed-size block is small, e.g. 128-bit blocks, compared to the data we want to encrypt being longer than 128-bits, then the algorithm requires a mode of operation. These modes will define how each block of the plaintext data is transformed into our ciphertext. These modes also determine how the previous ciphertext affects future encryption operations, as we will see below.
+## Encryption Overview
+Encryption can be a rough subject to unpack and understand. I'll do my best here to break things down in digestable chunks.
+
+### Symmetric vs Asymmetric vs Cipher
+
+Symmetric encryption algorithms are a method that uses one key to both encrypt and decrypt plaintext data.
+
+Asymmetric encryption algorithms are a method that uses two keys: a public key and a private key.
+
+Cipher is the algorithm used for performing the encryption or decryption. 
+
+### Encryption Modes
+
+**Block** -- plaintext is broken into *blocks* and the encryption occurs on each block as a single unit.
+**Stream** -- each individual byte of the plaintext is encrypted.
+
+Encryption algorithms are often considered a *block cipher* or a *stream cipher*
+
+### Why Modes of Operation Matter
+
+Different modes here than the Encryption Modes detailed above.
+
+*Modes of Operation* are needed when the plaintext block sizes are larger than what the encryption algorithm, aka cipher, would require. For example, if that block size is small, e.g. 128-bit blocks, compared to the plaintext data we want to encrypt (longer than 128-bits) then the algorithm requires a *mode of operation*. These modes will define how each block of the plaintext data is transformed into our ciphertext. These modes also determine how the previous ciphertext affects future encryption operations, as we will see below.
+
+{{< callout >}}
+So ***Modes of Operation*** work on ***Block Ciphers*** which fall into the ***symmetric encryption algorithms***
+{{< /callout >}}
 
 ## Electronic Codebook (ECB)
 
