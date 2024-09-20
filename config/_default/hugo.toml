@@ -39,6 +39,6 @@ buildFuture = false
   priority = 0.5
 
 # Google Analytics Configuration
-# [services]
-#   [services.googleAnalytics]
-#     ID = 'G-MEASUREMENT_ID'
+[services]
+  [services.googleAnalytics]
+    ID = 'GTM-WXWPZ5DR'
