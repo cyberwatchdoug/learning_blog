@@ -10,9 +10,6 @@ title = "CyberWatchDoug"
 
 theme = "kayal" # UNCOMMENT THIS LINE
 
-# Number of articles per page in the listing.
-paginate = 5
-
 # Enable processing of emojis in markdown.
 enableEmoji = true
 
@@ -26,6 +23,10 @@ summaryLength = 0
 buildDrafts = false
 # Build pages with future dates during site generation.
 buildFuture = false
+
+# Number of articles per page in the listing.
+[pagination]
+  pagerSize = 5
 
 # The types of outputs to generate for the homepage.
 # RSS is required to create RSS feeds, and JSON is needed for the search to function.
